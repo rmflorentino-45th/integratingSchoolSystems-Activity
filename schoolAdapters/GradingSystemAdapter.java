@@ -1,11 +1,15 @@
 package schoolAdapters;
 
 public class GradingSystemAdapter implements SchoolManagementApp {
-    
-    private gradeSys gradesys;
+    private GradingSystem grades;
 
-    public GradingSystemAdapter(gradeSys gradesys){
-        this.gradesys = gradesys;
+    public GradingSystemAdapter(GradingSystem grades){
+        this.grades = grades;
+    }
+
+    @Override
+    public void integrateSystem() {
+        grades.recordGrades();
     }
 
 }

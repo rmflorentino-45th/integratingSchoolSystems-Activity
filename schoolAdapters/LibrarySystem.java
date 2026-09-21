@@ -1,9 +1,7 @@
 package schoolAdapters;
 
 public class LibrarySystem {
-
-    public String manageBooks() {
-        System.out.println("Books in library: 1,000");
+    public void manageBooks() {
+        System.out.println("Books added to library! \n");
     }
-    
 }
